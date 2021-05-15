@@ -1,0 +1,28 @@
+{
+  "name": "CReact",
+  "version": "1.0.0",
+  "description": "react开发环境 \r > 主要用于react开发环境搭建，目前还不会写手脚架，所以直接拷贝仓库项目，快速开发",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "html-webpack-plugin": "^5.3.1"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaofan10/CReact.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaofan10/CReact/issues"
+  },
+  "homepage": "https://github.com/xiaofan10/CReact#readme"
+}
