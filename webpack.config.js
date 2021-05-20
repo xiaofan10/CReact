@@ -3,7 +3,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
+    mode: 'development',
     entry: {
+        hot: 'react-hot-loader/patch',  // 保证在react 与 react-dom加载前植入 为什么不清楚
         index: './src/index.tsx',
     },
     output: {
@@ -38,7 +40,11 @@ const config = {
             inject: 'body',  // 打包后js等文件注入位置 body为body底部
         })
 
-    ]
+    ],
+    devServer: {
+        contentBase: './build',
+       hot: true,
+      },
 }
 
 module.exports = config

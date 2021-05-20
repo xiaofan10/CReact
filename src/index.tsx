@@ -1,10 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Button from './components/Button'
+import App from './pages/App'
 
-const test: string = 'hellowolds'
-console.log(test)
-const id = document.getElementById('wrap')
-console.log(id)
+ReactDOM.render(<App />, document.getElementById('wrap'))
 
-ReactDOM.render(<Button />, id)
+// if (module.hot) {
+//     module.hot.accept(App, function() {
+//       console.log('更新啦');
+//       ReactDOM.render(<App />, id)
+//     })
+//   }
