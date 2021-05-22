@@ -1,5 +1,5 @@
 import React from 'react'
-import { hot } from 'react-hot-loader/root';
+
 import Button from '../../components/Button'
 
 function App() {
@@ -11,4 +11,4 @@ function App() {
         </div>
     )
 }
-export default hot(App)
+export default App

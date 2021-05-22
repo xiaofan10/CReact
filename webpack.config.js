@@ -5,7 +5,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const config = {
     mode: 'development',
     entry: {
-        hot: 'react-hot-loader/patch',  // 保证在react 与 react-dom加载前植入 为什么不清楚
         index: './src/index.tsx',
     },
     output: {
